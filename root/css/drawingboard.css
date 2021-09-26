@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
 }
 
 .v25_5 {
-    width: 100%;
+    width: 1920px;
     height: 1080px;
     background: linear-gradient(rgba(218, 210, 153, 1), rgba(176, 218, 185, 1));
     opacity: 1;
@@ -18,7 +19,7 @@ body {
 }
 
 .v96_123 {
-    width: 100%;
+    width: 1920px;
     height: 1014px;
     background: url("../images/v96_123.png");
     background-repeat: no-repeat;
@@ -32,7 +33,7 @@ body {
 }
 
 .v27_17 {
-    width: 100%;
+    width: 1220px;
     height: 709px;
     background: rgba(255, 255, 255, 1);
     opacity: 1;
@@ -1375,8 +1376,8 @@ body {
 }
 
 .v94_101 {
-    width: 100%;
-    height: 152px;
+    width: 1220px;
+    height: fit-content;
     background: url("../images/v94_101.png");
     background-repeat: no-repeat;
     background-position: center center;
