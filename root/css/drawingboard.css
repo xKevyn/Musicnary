@@ -667,8 +667,9 @@ body {
     opacity: 1;
     position: absolute;
     top: 13px;
-    left: 72px;
+    left: 12px;
     overflow: hidden;
+    transform: scaleX(-1);
 }
 
 .v94_119 {
