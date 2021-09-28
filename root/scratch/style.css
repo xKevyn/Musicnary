@@ -332,18 +332,18 @@ header h1 {
     display: flex;
     align-items: center;
     background-color: white;
-    padding: 5px 10px;
+    padding: 5px 15px 5px 10px;
     margin: 5px;
 
-    border: 2px green solid;
-    border-radius: 1em;
+    border: 3px green solid;
+    border-radius: 0.75em;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 
     font-weight: 780;
-    font-size: 16px;
+    font-size: 20px;
 }
 .size-tool button img{
     width: fit-content;
-    height: 30px;
+    height: 35px;
     margin: 0px 10px;
 }
