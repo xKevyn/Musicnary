@@ -12,6 +12,38 @@ body {
     -moz-transform: scale(1);
 }
 
+@media only screen and (max-width: 1500px) {
+    body {
+        overflow: hidden;
+        zoom: 0.9;
+        -moz-transform: scale(0.9);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        overflow: hidden;
+        zoom: 0.8;
+        -moz-transform: scale(0.8);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow: hidden;
+        zoom: 0.7;
+        -moz-transform: scale(0.7);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+        zoom: 0.6;
+        -moz-transform: scale(0.6);
+    }
+}
+
 main {
     display: flex;
     flex-flow: column nowrap;
@@ -382,5 +414,4 @@ header h1 {
 .size-tool button img {
     width: fit-content;
     height: 35px;
-    margin: 0px 10px;
 }

@@ -14,7 +14,8 @@ function select_color(id) {
 window.addEventListener("load", () => {
     select_tool("pen")
     console.log(document.querySelector("#c2").style)
-        /* Canvas part */
+
+    /* Canvas part */
 
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
