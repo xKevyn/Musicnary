@@ -1,14 +1,21 @@
 let tool = "pen"
 
 function select_tool(id) {
+
+    /* highlights the tools that are selected */
     if (tool != id) tool.style.borderColor = null
     tool = document.getElementById(id)
     tool.style.borderColor = "black"
+
+    /* this allows the pen to gain its previous picked colour after using other tools */
+    if (tool == document.getElementById("pen")) select_color("picked-color")
 }
 
 window.addEventListener("load", () => {
+    /* preselect the pen tool */
     select_tool("pen")
 
+    /* canvas stuff */
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
 
@@ -34,6 +41,9 @@ window.addEventListener("load", () => {
         let rect = canvas.getBoundingClientRect()
         let x = e.clientX - rect.left
         let y = e.clientY - rect.top
+
+        /* eraser function */
+        if (tool == document.getElementById("eraser")) ctx.strokeStyle = "white"
 
         ctx.lineTo(x, y)
         ctx.stroke()
