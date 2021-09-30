@@ -63,26 +63,26 @@
         <div class="size-tool">
             <div class="size-input">
                 <div class="size-circle">
-                    <div class="circle1">
+                    <div class="circle1" onclick="select_size(this.className)">
                         <div class="circle1-size"></div>
                     </div>
-                    <div class="circle2">
+                    <div class="circle2" onclick="select_size(this.className)">
                         <div class="circle2-size"></div>
                     </div>
-                    <div class="circle3">
+                    <div class="circle3" onclick="select_size(this.className)">
                         <div class="circle3-size"></div>
                     </div>
-                    <div class="circle4">
+                    <div class="circle4" onclick="select_size(this.className)">
                         <div class="circle4-size"></div>
                     </div>
-                    <div class="circle5">
+                    <div class="circle5" onclick="select_size(this.className)">
                         <div class="circle5-size"></div>
                     </div>
                 </div>
                 <div class="size-line">
                     <div class="size-circle">
                         <div class="circle"></div>
-                        <input type="range" min="0" max="10" step="any">
+                        <input id="slider" oninput="get_slider_size()" type="range" min="0" max="10" step="any">
                         <div class="circleF"></div>
                     </div>
                 </div>

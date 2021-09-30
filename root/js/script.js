@@ -11,13 +11,11 @@ window.addEventListener("load", () => {
 
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
-    var colorSelected = document.getElementById("c1").style.backgroundColor
 
     canvas.height = canvas.clientHeight
     canvas.width = canvas.clientWidth
 
     let painting = false
-    let lineWidth = 5
 
     function startPosition(e) {
         painting = true
@@ -31,7 +29,6 @@ window.addEventListener("load", () => {
 
     function draw(e) {
         if (!painting) return
-        ctx.lineWidth = lineWidth
         ctx.lineCap = "round"
 
         let rect = canvas.getBoundingClientRect()
@@ -60,7 +57,42 @@ function saveImage() {
 function select_color(id) {
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
-    colorSelected = document.getElementById(id).style.backgroundColor
+    let colorSelected = document.getElementById(id).style.backgroundColor
     ctx.strokeStyle = colorSelected
     document.querySelector("div.picked-color").style.backgroundColor = colorSelected
+}
+
+let deafultCircle = "circle2"
+
+function select_size(circle) {
+    if (circle != deafultCircle) document.querySelector(`div.${deafultCircle}`).style.backgroundColor = null
+    deafultCircle = circle
+    document.querySelector(`div.${circle}`).style.backgroundColor = "black"
+    const canvas = document.querySelector("#canvas")
+    const ctx = canvas.getContext("2d")
+    switch (circle) {
+        case "circle1":
+            ctx.lineWidth = 4
+            break
+        case "circle2":
+            ctx.lineWidth = 8
+            break
+        case "circle3":
+            ctx.lineWidth = 12
+            break
+        case "circle4":
+            ctx.lineWidth = 16
+            break
+        case "circle5":
+            ctx.lineWidth = 20
+            break
+        default:
+    }
+}
+
+function get_slider_size() {
+    document.querySelector(`div.${deafultCircle}`).style.backgroundColor = null
+    const canvas = document.querySelector("#canvas")
+    const ctx = canvas.getContext("2d")
+    ctx.lineWidth = document.getElementById("slider").value * 2
 }
