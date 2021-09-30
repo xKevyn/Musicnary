@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
@@ -17,46 +18,45 @@
 
         <div class="board">
             <div class="color-board">
-                <div class="c1"></div>
-                <div class="c2"></div>
-                <div class="c3"></div>
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
 
-                <div class="c4"></div>
-                <div class="c5"></div>
-                <div class="c6"></div>
+                <div id="c4"></div>
+                <div id="c5"></div>
+                <div id="c6"></div>
 
-                <div class="c7"></div>
-                <div class="c8"></div>
-                <div class="c9"></div>
+                <div id="c7"></div>
+                <div id="c8"></div>
+                <div id="c9"></div>
 
-                <div class="c10"></div>
-                <div class="c11"></div>
-                <div class="c12"></div>
+                <div id="c10"></div>
+                <div id="c11"></div>
+                <div id="c12"></div>
 
-                <div class="c13"></div>
-                <div class="c14"></div>
-                <div class="c15"></div>
+                <div id="c13"></div>
+                <div id="c14"></div>
+                <div id="c15"></div>
 
-                <div class="c16"></div>
-                <div class="c17"></div>
-                <div class="c18"></div>
-                <div class="picked-color"></div>
+                <div id="c16"></div>
+                <div id="c17"></div>
+                <div id="c18"></div>
+                <div id="picked-color"></div>
             </div>
 
-            <div class="drawer"></div>
+            <canvas id="canvas" class="drawer"></canvas>
 
             <div class="tool-board">
-                <div><img src="images/v93_93.png"></div>
-                <div><img src="images/v93_95.png"></div>
-                <div><img src="images/v93_95.png"></div>
-                <div><img src="images/v93_95.png"></div>
-                <div><img src="images/v93_95.png"></div>
-
-                <div><img src="images/v93_95.png"></div>
-                <div><img src="images/v93_95.png"></div>
-                <div><img src="images/v93_109.png"></div>
-                <div><img src="images/v93_114.png"></div>
-                <div><img src="images/v93_116.png"></div>
+                <div><img id="pen" onclick="select_tool(this.id)" src="images/v93_93.png"></div>
+                <div><img id="eraser" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="filled_square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="filled_circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="line" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="bucket" onclick="select_tool(this.id)" src="images/v93_109.png"></div>
+                <div><img id="undo" onclick="select_tool(this.id)" src="images/v93_114.png"></div>
+                <div><img id="redo" onclick="select_tool(this.id)" class="reverse" src="images/v93_116.png"></div>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
                 </div>
                 <div class="size-line">
                     <div class="size-circle">
-                        <div class="circle1"></div>
+                        <div class="circle"></div>
                         <input type="range" min="0" max="10" step="any">
                         <div class="circleF"></div>
                     </div>

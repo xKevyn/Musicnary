@@ -1,19 +1,23 @@
-body {
-    margin: 0px;
+html {
+    width: 100%;
+    height: 100%;
     background: linear-gradient(rgba(218, 210, 153, 1), rgba(176, 218, 185, 1));
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
-    overflow: scroll;
+}
+
+body {
+    overflow: hidden;
+    zoom: 1;
+    -moz-transform: scale(1);
 }
 
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-
-    border: 3px solid rgba(76, 121, 60, 1);
-    border-radius: 1em;
+    /*     border: 3px solid rgba(76, 121, 60, 1);
+    border-radius: 1em; */
     margin: 10px;
     padding: 15px;
 }
@@ -25,7 +29,7 @@ header {
     width: fit-content;
     height: fit-content;
     border-radius: 1.75em;
-    background-color:rgba(131, 131, 131, 0.4000000059604645);
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
     padding: 0px 5%;
 }
 
@@ -40,85 +44,113 @@ header h1 {
     min-width: 270px;
 }
 
-.board{
-    display:flex;
+.drawer {
+    background-color: white;
+    border: 3px solid rgba(76, 121, 60, 1);
+    border-radius: 2em;
+    width: 65%;
+    height: 480px;
+}
+
+.board {
+    display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin: 2% 0px 2% 0px;
+    margin: 1% 0px 1% 0px;
 }
 
-.color-board{
+.color-board {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     background-color: rgba(131, 131, 131, 0.4000000059604645);
     border-radius: 0.75em;
-    width: 175px;
+    width: 12%;
     padding: 10px 0px;
-    height: fit-content;
+    height: 50%;
 }
 
+
 /*The colors of the color board part 1*/
-.c1 {
+
+#c1 {
     background-color: green;
 }
-.c2 {
+
+#c2 {
     background-color: blue;
 }
-.c3 {
+
+#c3 {
     background-color: red;
 }
-.c4 {
+
+#c4 {
     background-color: lime;
 }
-.c5 {
+
+#c5 {
     background-color: cyan;
 }
-.c6 {
+
+#c6 {
     background-color: rgb(255, 176, 176);
 }
 
+
 /*The colors of the color board part 2*/
-.c7 {
+
+#c7 {
     background-color: yellow;
 }
-.c8 {
+
+#c8 {
     background-color: purple;
 }
-.c9 {
+
+#c9 {
     background-color: rgb(255, 201, 25);
 }
-.c10 {
+
+#c10 {
     background-color: rgb(168, 86, 18);
 }
-.c11 {
+
+#c11 {
     background-color: rgb(97, 58, 0);
 }
-.c12 {
+
+#c12 {
     background-color: rgb(255, 182, 98);
 }
 
+
 /*The colors of the color board part 3*/
-.c13 {
+
+#c13 {
     background-color: black;
 }
-.c14 {
+
+#c14 {
     background-color: white;
 }
-.c15 {
+
+#c15 {
     background-color: gray;
 }
 
-.c16 {
+#c16 {
     background-color: #666;
 }
-.c17 {
+
+#c17 {
     background-color: #dd31ff;
 }
-.c18 {
+
+#c18 {
     background-color: rgb(238, 255, 0);
 }
 
@@ -132,17 +164,13 @@ header h1 {
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.color-board .picked-color {
-    width: 145px;
-    background-color: black;
+.color-board div:hover {
+    border: 1.65px white solid;
 }
 
-.drawer{
-    background-color: white;
-    border: 3px solid rgba(76, 121, 60, 1);
-    border-radius: 2em;
-    width: 900px;
-    height: 500px;
+.color-board #picked-color {
+    width: 85%;
+    background-color: black;
 }
 
 .tool-board {
@@ -157,32 +185,43 @@ header h1 {
     height: fit-content;
 }
 
-.tool-board img{
+.tool-board img {
     width: 40px;
     margin: 5px;
     padding: 5px;
-
     border: 3px white solid;
     border-radius: 0.5em;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.reverse {
+    transform: scaleX(-1);
+}
+
+.tool-board img:hover {
+    border: 3px black solid;
+}
+
+.selected {
+    border: 3px black solid;
+}
+
 .size-tool {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 60px;
-    width: fit-content;
-    /*background-color: aliceblue;*/
+    width: 50%;
+    zoom: 1.1;
+    -moz-transform: scale(1.1);
+    /* background-color: aliceblue; */
 }
-
 
 .size-input {
     background-color: rgba(131, 131, 131, 0.4000000059604645);
     border-radius: 0.75em;
     padding: 5px;
-
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -194,22 +233,23 @@ header h1 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
     border: 1px white solid;
     border-radius: 0.5em;
     padding: 5px;
     margin: 0px 5px;
 }
 
+
 /*The circle part*/
-.circle1 {
+
+.circle1,
+.circle {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,10 +266,9 @@ header h1 {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,10 +285,9 @@ header h1 {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,10 +304,9 @@ header h1 {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,10 +323,9 @@ header h1 {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -306,23 +342,29 @@ header h1 {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  rgba(176, 218, 185, 1);
-
+    background-color: rgba(176, 218, 185, 1);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.circle1:hover,
+.circle2:hover,
+.circle3:hover,
+.circle4:hover,
+.circle5:hover {
+    background-color: black;
 }
 
 .size-circle .circleF {
     width: 25px;
     height: 25px;
     border: 2px white solid;
-    border-radius: 50%; 
+    border-radius: 50%;
     margin: 0px 5px;
-    background-color:  white;
-
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,15 +376,14 @@ header h1 {
     background-color: white;
     padding: 5px 15px 5px 10px;
     margin: 5px;
-
-    border: 3px green solid;
-    border-radius: 0.75em;
+    border: 2.5px solid rgba(76, 121, 60, 1);
+    border-radius: 0.8em;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-
     font-weight: 780;
     font-size: 20px;
 }
-.size-tool button img{
+
+.size-tool button img {
     width: fit-content;
     height: 35px;
     margin: 0px 10px;
