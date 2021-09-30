@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/script.js"></script>
@@ -18,30 +18,30 @@
 
         <div class="board">
             <div class="color-board">
-                <div id="c1"></div>
-                <div id="c2"></div>
-                <div id="c3"></div>
+                <div id="c1" style="background-color: black" onclick="select_color(this.id)"></div>
+                <div id="c2" style="background-color: #8C8C8C" onclick="select_color(this.id)"></div>
+                <div id="c3" style="background-color: #C4C4C4" onclick="select_color(this.id)"></div>
 
-                <div id="c4"></div>
-                <div id="c5"></div>
-                <div id="c6"></div>
+                <div id="c4" style="background-color: white" onclick="select_color(this.id)"></div>
+                <div id="c5" style="background-color: #FFD700" onclick="select_color(this.id)"></div>
+                <div id="c6" style="background-color: #FFFF00" onclick="select_color(this.id)"></div>
 
-                <div id="c7"></div>
-                <div id="c8"></div>
-                <div id="c9"></div>
+                <div id="c7" style="background-color: #FFA500" onclick="select_color(this.id)"></div>
+                <div id="c8" style="background-color: #FFC0CB" onclick="select_color(this.id)"></div>
+                <div id="c9" style="background-color: red" onclick="select_color(this.id)"></div>
 
-                <div id="c10"></div>
-                <div id="c11"></div>
-                <div id="c12"></div>
+                <div id="c10" style="background-color: #D729D7" onclick="select_color(this.id)"></div>
+                <div id="c11" style="background-color: #FF00FF" onclick="select_color(this.id)"></div>
+                <div id="c12" style="background-color: blue" onclick="select_color(this.id)"></div>
 
-                <div id="c13"></div>
-                <div id="c14"></div>
-                <div id="c15"></div>
+                <div id="c13" style="background-color: #66E5E5" onclick="select_color(this.id)"></div>
+                <div id="c14" style="background-color: #79E567" onclick="select_color(this.id)"></div>
+                <div id="c15" style="background-color: green" onclick="select_color(this.id)"></div>
 
-                <div id="c16"></div>
-                <div id="c17"></div>
-                <div id="c18"></div>
-                <div id="picked-color"></div>
+                <div id="c16" style="background-color: #864531" onclick="select_color(this.id)"></div>
+                <div id="c17" style="background-color: #BB5E4A" onclick="select_color(this.id)"></div>
+                <div id="c18" style="background-color: #EAA179" onclick="select_color(this.id)"></div>
+                <div class="picked-color"></div>
             </div>
 
             <canvas id="canvas" class="drawer"></canvas>

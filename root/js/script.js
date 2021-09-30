@@ -1,29 +1,20 @@
 let tool = "pen"
-let color = "c1"
 
 function select_tool(id) {
-    if (tool != id) tool.style.borderColor = "white"
+    if (tool != id) tool.style.borderColor = null
     tool = document.getElementById(id)
     tool.style.borderColor = "black"
 }
 
-function select_color(id) {
-
-}
-
 window.addEventListener("load", () => {
     select_tool("pen")
-    console.log(document.querySelector("#c2").style)
-
-    /* Canvas part */
 
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
+    var colorSelected = document.getElementById("c1").style.backgroundColor
 
     canvas.height = canvas.clientHeight
     canvas.width = canvas.clientWidth
-
-    let colorSelected = "black"
 
     let painting = false
     let lineWidth = 5
@@ -42,10 +33,10 @@ window.addEventListener("load", () => {
         if (!painting) return
         ctx.lineWidth = lineWidth
         ctx.lineCap = "round"
-        ctx.strokeStyle = colorSelected
 
-        let x = e.clientX - 295
-        let y = e.clientY - 130
+        let rect = canvas.getBoundingClientRect()
+        let x = e.clientX - rect.left
+        let y = e.clientY - rect.top
 
         ctx.lineTo(x, y)
         ctx.stroke()
@@ -64,4 +55,12 @@ function saveImage() {
         const ctx = canvas.getContext("2d")
         const image = canvas.toDataURL("image.png").replace("image/png", "image/octet-stream")
     }
+}
+
+function select_color(id) {
+    const canvas = document.querySelector("#canvas")
+    const ctx = canvas.getContext("2d")
+    colorSelected = document.getElementById(id).style.backgroundColor
+    ctx.strokeStyle = colorSelected
+    document.querySelector("div.picked-color").style.backgroundColor = colorSelected
 }

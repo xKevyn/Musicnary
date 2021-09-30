@@ -105,87 +105,6 @@ header h1 {
     height: 50%;
 }
 
-
-/*The colors of the color board part 1*/
-
-#c1 {
-    background-color: green;
-}
-
-#c2 {
-    background-color: blue;
-}
-
-#c3 {
-    background-color: red;
-}
-
-#c4 {
-    background-color: lime;
-}
-
-#c5 {
-    background-color: cyan;
-}
-
-#c6 {
-    background-color: rgb(255, 176, 176);
-}
-
-
-/*The colors of the color board part 2*/
-
-#c7 {
-    background-color: yellow;
-}
-
-#c8 {
-    background-color: purple;
-}
-
-#c9 {
-    background-color: rgb(255, 201, 25);
-}
-
-#c10 {
-    background-color: rgb(168, 86, 18);
-}
-
-#c11 {
-    background-color: rgb(97, 58, 0);
-}
-
-#c12 {
-    background-color: rgb(255, 182, 98);
-}
-
-
-/*The colors of the color board part 3*/
-
-#c13 {
-    background-color: black;
-}
-
-#c14 {
-    background-color: white;
-}
-
-#c15 {
-    background-color: gray;
-}
-
-#c16 {
-    background-color: #666;
-}
-
-#c17 {
-    background-color: #dd31ff;
-}
-
-#c18 {
-    background-color: rgb(238, 255, 0);
-}
-
 .color-board div {
     width: 40px;
     height: 40px;
@@ -200,7 +119,7 @@ header h1 {
     border: 1.65px white solid;
 }
 
-.color-board #picked-color {
+.color-board .picked-color {
     width: 85%;
     background-color: black;
 }
@@ -366,18 +285,6 @@ header h1 {
     height: 20px;
 }
 
-.size-circle .circle5 {
-    width: 25px;
-    height: 25px;
-    border: 2px white solid;
-    border-radius: 50%;
-    margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .circle1:hover,
 .circle2:hover,
 .circle3:hover,
@@ -414,4 +321,47 @@ header h1 {
 .size-tool button img {
     width: fit-content;
     height: 35px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: rgba(131, 131, 131, 0.4000000059604645);
+    }
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 10px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+    input[type='range']::-webkit-slider-thumb {
+        width: 10px;
+        -webkit-appearance: none;
+        height: 10px;
+        background: rgba(176, 218, 185, 1);
+        box-shadow: -80px 0 0 80px rgba(176, 218, 185, 1);
+    }
+}
+
+
+/** FF*/
+
+input[type="range"]::-moz-range-progress {
+    background-color: rgba(176, 218, 185, 1);
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
+}
+
+
+/* IE*/
+
+input[type="range"]::-ms-fill-lower {
+    background-color: rgba(176, 218, 185, 1);
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
 }
