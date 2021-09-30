@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; user-scalable=0;">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Draw clues about the music playing </h1> <img src="images/v94_61.png">
+        </header>
+
+        <div class="board">
+            <div class="color-board">
+                <div id="c1"></div>
+                <div id="c2"></div>
+                <div id="c3"></div>
+
+                <div id="c4"></div>
+                <div id="c5"></div>
+                <div id="c6"></div>
+
+                <div id="c7"></div>
+                <div id="c8"></div>
+                <div id="c9"></div>
+
+                <div id="c10"></div>
+                <div id="c11"></div>
+                <div id="c12"></div>
+
+                <div id="c13"></div>
+                <div id="c14"></div>
+                <div id="c15"></div>
+
+                <div id="c16"></div>
+                <div id="c17"></div>
+                <div id="c18"></div>
+                <div id="picked-color"></div>
+            </div>
+
+            <canvas id="canvas" class="drawer"></canvas>
+
+            <div class="tool-board">
+                <div><img id="pen" onclick="select_tool(this.id)" src="images/v93_93.png"></div>
+                <div><img id="eraser" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="filled_square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="filled_circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="line" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
+                <div><img id="bucket" onclick="select_tool(this.id)" src="images/v93_109.png"></div>
+                <div><img id="undo" onclick="select_tool(this.id)" src="images/v93_114.png"></div>
+                <div><img id="redo" onclick="select_tool(this.id)" class="reverse" src="images/v93_116.png"></div>
+            </div>
+        </div>
+
+        <div class="size-tool">
+            <div class="size-input">
+                <div class="size-circle">
+                    <div class="circle1">
+                        <div class="circle1-size"></div>
+                    </div>
+                    <div class="circle2">
+                        <div class="circle2-size"></div>
+                    </div>
+                    <div class="circle3">
+                        <div class="circle3-size"></div>
+                    </div>
+                    <div class="circle4">
+                        <div class="circle4-size"></div>
+                    </div>
+                    <div class="circle5">
+                        <div class="circle5-size"></div>
+                    </div>
+                </div>
+                <div class="size-line">
+                    <div class="size-circle">
+                        <div class="circle"></div>
+                        <input type="range" min="0" max="10" step="any">
+                        <div class="circleF"></div>
+                    </div>
+                </div>
+            </div>
+            <button><img src="images/v94_2.png">DONE!</button>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
