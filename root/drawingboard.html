@@ -13,7 +13,7 @@
 <body>
     <main>
         <header>
-            <h1>Draw clues about the music playing </h1> <img src="images/v94_61.png">
+            <h1>Draw clues about the music playing </h1> <img src="images/playing.png">
         </header>
 
         <div class="board">
@@ -47,16 +47,16 @@
             <canvas id="canvas" class="drawer"></canvas>
 
             <div class="tool-board">
-                <div><img id="pen" onclick="select_tool(this.id)" src="images/v93_93.png"></div>
-                <div><img id="eraser" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="filled_square" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="filled_circle" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="line" onclick="select_tool(this.id)" src="images/v93_95.png"></div>
-                <div><img id="bucket" onclick="select_tool(this.id)" src="images/v93_109.png"></div>
-                <div><img id="undo" onclick="select_tool(this.id)" src="images/v93_114.png"></div>
-                <div><img id="redo" onclick="select_tool(this.id)" class="reverse" src="images/v93_116.png"></div>
+                <div><img id="pen" onclick="select_tool(this.id)" src="images/pen.png"></div>
+                <div><img id="eraser" onclick="select_tool(this.id)" src="images/eraser.png"></div>
+                <div><img id="square" onclick="select_tool(this.id)" src="images/square.png"></div>
+                <div><img id="circle" onclick="select_tool(this.id)" src="images/circle.png"></div>
+                <div><img id="filled_square" onclick="select_tool(this.id)" src="images/filled-square.png"></div>
+                <div><img id="filled_circle" onclick="select_tool(this.id)" src="images/filled-circle.png"></div>
+                <div><img id="line" onclick="select_tool(this.id)" src="images/line.png"></div>
+                <div><img id="bucket" onclick="select_tool(this.id)" src="images/bucket.png"></div>
+                <div><img id="undo" onclick="select_tool(this.id)" src="images/undo.png"></div>
+                <div><img id="redo" onclick="select_tool(this.id)" class="reverse" src="images/undo.png"></div>
             </div>
         </div>
 
@@ -82,12 +82,12 @@
                 <div class="size-line">
                     <div class="size-circle">
                         <div class="circle"></div>
-                        <input id="slider" oninput="get_slider_size()" type="range" min="0" max="10" step="any">
+                        <input id="slider" oninput="get_slider_size()" type="range" min="1" max="20" value="1" step="any">
                         <div class="circleF"></div>
                     </div>
                 </div>
             </div>
-            <button><img src="images/v94_2.png">DONE!</button>
+            <button><img src="images/done.png">DONE!</button>
         </div>
 
 

@@ -104,5 +104,5 @@ function get_slider_size() {
     document.querySelector(`div.${deafultCircle}`).style.backgroundColor = null
     const canvas = document.querySelector("#canvas")
     const ctx = canvas.getContext("2d")
-    ctx.lineWidth = document.getElementById("slider").value * 2
+    ctx.lineWidth = document.getElementById("slider").value
 }
