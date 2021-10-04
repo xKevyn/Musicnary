@@ -372,3 +372,68 @@ input[type="range"]::-ms-fill-lower {
 input[type="range"]::-ms-fill-upper {
     background-color: rgba(131, 131, 131, 0.4000000059604645);
 }
+
+
+/* Prompt page */
+
+.music-icon {
+    width: 20%;
+}
+
+.music-icon img {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.title {
+    width: fit-content;
+    height: fit-content;
+}
+
+#done {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 15px 5px 10px;
+    margin: 5px;
+    border: 2.5px solid rgba(76, 121, 60, 1);
+    border-radius: 0.8em;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    font-weight: 780;
+    font-size: 20px;
+}
+
+#done img {
+    width: fit-content;
+    height: 35px;
+}
+
+.done-wrapper {
+    width: fit-content;
+    padding-left: 20px;
+}
+
+.text-field {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-radius: 1.75em;
+    background-color: white;
+    padding: 2%;
+    width: 500px;
+    height: 20px;
+}
+
+.text-field p {
+    margin: 0%;
+}
+
+.input {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 181px;
+}

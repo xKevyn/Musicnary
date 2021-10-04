@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/drawingboard.js"></script>
 </head>
 
 <body>
@@ -55,8 +55,6 @@
                 <div><img id="filled-circle" onclick="select_tool(this.id)" src="images/filled-circle.png"></div>
                 <div><img id="line" onclick="select_tool(this.id)" src="images/line.png"></div>
                 <div><img id="bucket" onclick="select_tool(this.id)" src="images/bucket.png"></div>
-                <div><img id="undo" onclick="select_tool(this.id)" src="images/undo.png"></div>
-                <div><img id="redo" onclick="select_tool(this.id)" class="reverse" src="images/undo.png"></div>
             </div>
         </div>
 
@@ -87,10 +85,8 @@
                     </div>
                 </div>
             </div>
-            <button><img src="images/done.png">DONE!</button>
+            <button id="done"><img src="images/done.png">DONE!</button>
         </div>
-
-
     </main>
 
 </body>
