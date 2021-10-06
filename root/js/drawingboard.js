@@ -25,7 +25,6 @@ function select_tool(id) {
         x = e.clientX - rect.left
         y = e.clientY - rect.top
         draw(e)
-        saveImage()
     }
 
     function endPosition() {
