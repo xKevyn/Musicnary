@@ -85,6 +85,7 @@ header h1 {
     vertical-align: middle;
     white-space: nowrap;
     min-width: 270px;
+    margin: auto;
 }
 
 .drawer {
@@ -402,9 +403,9 @@ input[type="range"]::-ms-fill-upper {
     background-color: white;
     padding: 5px 15px 5px 10px;
     margin: 5px;
-    border: 2.5px solid rgba(76, 121, 60, 1);
     border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: transparent 1px solid;
     font-weight: 780;
     font-size: 20px;
 }
@@ -441,9 +442,17 @@ input[type="range"]::-ms-fill-upper {
     padding-left: 181px;
 }
 
+
+/* guess */
+
+.title h1 {
+    margin: 20px 0 10px 0;
+}
+
 #guessDrawing {
     zoom: 0.6;
     background-color: white;
+    margin-top: 50px;
 }
 
 
@@ -640,9 +649,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .back-button,
-.next-button,
-.invite-button,
-.start-button {
+.next-button {
     justify-content: space-evenly;
     width: 180px;
     height: 50px;
@@ -859,12 +866,14 @@ input[type="range"]::-ms-fill-upper {
 .buttons img {
     width: fit-content;
     height: 35px;
+    padding-right: 10px;
 }
 
 .buttons button {
     display: flex;
     align-items: center;
     margin: 15px;
+    padding: 5px 20px;
     background-color: #ffffff;
     border: 3px solid transparent;
     border-radius: 0.8em;
