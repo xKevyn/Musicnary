@@ -5,6 +5,7 @@
     -webkit-user-select: none;
     -o-user-select: none;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -472,7 +473,7 @@ input[type="range"]::-ms-fill-upper {
 
 .player-list div {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     width: 220px;
     height: 45px;
     margin: 10.5px;
@@ -496,7 +497,7 @@ input[type="range"]::-ms-fill-upper {
     color: black;
     font-size: 15pt;
     margin: 5%;
-    padding: 0 0 0 5%;
+    white-space: nowrap;
 }
 
 .player-list::-webkit-scrollbar {
@@ -531,10 +532,11 @@ input[type="range"]::-ms-fill-upper {
 .draw div,
 .guess div {
     display: flex;
-    flex-flow: row wrap;
-    width: 220px;
-    height: 45px;
+    flex-flow: row nowrap;
+    width: fit-content;
+    height: fit-content;
     margin: 10.5px;
+    padding: 0px 20px 0px 10px;
     border: 3px solid transparent;
     border-radius: 1.25em;
     background-color: white;
@@ -548,17 +550,16 @@ input[type="range"]::-ms-fill-upper {
 
 .draw img,
 .guess img {
-    margin-left: 5px;
     width: 55px;
-    border-radius: 50%;
 }
 
 .draw h2,
 .guess h2 {
     color: black;
-    font-size: 15pt;
     margin: 5%;
-    padding: 0 0 0 5%;
+    padding: 0px 10px;
+    white-space: nowrap;
+    font-size: 22px;
 }
 
 .replay::-webkit-scrollbar {
@@ -580,8 +581,11 @@ input[type="range"]::-ms-fill-upper {
     color: #fff;
     text-align: center;
     font-weight: 900;
-    font-family: arial;
     position: relative;
+}
+
+.replay-bubble img {
+    width: 800px;
 }
 
 .right::before {
@@ -612,7 +616,7 @@ input[type="range"]::-ms-fill-upper {
 
 .replay-control {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     width: 50%;
     height: 15%;
     margin: 10px 25% 10px 25%;
