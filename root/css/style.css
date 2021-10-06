@@ -6,6 +6,7 @@
     -o-user-select: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 html {
@@ -495,8 +496,8 @@ input[type="range"]::-ms-fill-upper {
 
 .player-list h2 {
     color: black;
-    font-size: 15pt;
-    margin: 5%;
+    font-size: 16pt;
+    margin: auto;
     white-space: nowrap;
 }
 
@@ -556,8 +557,8 @@ input[type="range"]::-ms-fill-upper {
 .draw h2,
 .guess h2 {
     color: black;
-    margin: 5%;
-    padding: 0px 10px;
+    margin: auto;
+    padding: 5px 20px;
     white-space: nowrap;
     font-size: 22px;
 }
@@ -639,7 +640,9 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .back-button,
-.next-button {
+.next-button,
+.invite-button,
+.start-button {
     justify-content: space-evenly;
     width: 180px;
     height: 50px;
@@ -654,4 +657,222 @@ input[type="range"]::-ms-fill-upper {
 .replay-control img {
     width: fit-content;
     height: 35px;
+}
+
+
+/* lobby */
+
+.lobby {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.box-wrapper {
+    width: 50%;
+    margin-top: auto;
+}
+
+.gamemode-selection {
+    justify-content: space-between;
+    position: relative;
+}
+
+.gamemode-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 0em 0em 0.5em 0.5em;
+}
+
+.settings {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 0em 0em 0.5em 0.5em;
+    width: 18%;
+    height: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.setting-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 95%;
+    margin: 10px 0px 30px 10.5px;
+}
+
+.desc {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: 0;
+}
+
+.desc h2 {
+    color: black;
+    font-size: 32pt;
+    margin: 0;
+}
+
+.desc p {
+    color: black;
+    font-size: 16pt;
+    margin: 0;
+}
+
+.icon {
+    margin: 5px;
+}
+
+.icon img {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.settings::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+    border-radius: 0.5em;
+}
+
+.settings::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 0.5em;
+    background-clip: padding-box;
+}
+
+.options {
+    margin: auto;
+}
+
+.invis {
+    opacity: 0;
+    z-index: -100000;
+}
+
+.dropdown {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    border: black 3px solid;
+    border-radius: 2em;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.dropdown h2 {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.dropdown img {
+    width: 20px;
+    height: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.setting-buttons {
+    height: 50px;
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 0.5em 0.5em 0em 0em;
+    border: none;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 600;
+    width: 50%;
+    top: -50px;
+}
+
+.unselected-button {
+    width: 49.5%;
+    top: -54px;
+}
+
+.left-button {
+    left: 0px;
+}
+
+.right-button {
+    right: 0px;
+}
+
+.gamemodes {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: auto;
+}
+
+.gamemodes div {
+    background-color: white;
+    padding: 30px;
+    margin: 5%;
+    border-radius: 10em;
+    border: #ffffff solid 3px;
+}
+
+.gamemodes div:hover {
+    border: #000000 solid 3px;
+}
+
+.gamemodes img {
+    width: 150px;
+    background-color: white;
+}
+
+.gamemode-names {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 5%;
+    margin: auto;
+}
+
+.gamemode-names h2 {
+    justify-content: space-between;
+    padding: 0 70px;
+    margin: 3% 0;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    height: 15%;
+    margin: auto;
+}
+
+.buttons img {
+    width: fit-content;
+    height: 35px;
+}
+
+.buttons button {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    background-color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 0.8em;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 780;
+    font-size: 20px;
+}
+
+.buttons button:hover {
+    border: #000000 solid 3px;
 }
