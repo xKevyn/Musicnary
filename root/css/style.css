@@ -12,7 +12,7 @@
 html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(218, 210, 153, 1), rgba(176, 218, 185, 1));
+    background: #4b6cb7;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -65,32 +65,33 @@ main {
     padding: 15px;
 }
 
-header {
+.clues {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     width: fit-content;
     height: fit-content;
-    border-radius: 1.75em;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 15px 15px 30px #405c9c, -15px -15px 30px #567cd2;
     padding: 0px 5%;
 }
 
-header img {
+.clues img {
     width: "fit-content";
     height: 90px;
 }
 
-header h1 {
+.clues h1 {
     vertical-align: middle;
     white-space: nowrap;
+    color: white;
     min-width: 270px;
     margin: auto;
 }
 
 .drawer {
     background-color: white;
-    border: 3px solid rgba(76, 121, 60, 1);
     border-radius: 2em;
     width: 65%;
     height: 480px;
@@ -110,8 +111,9 @@ header h1 {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
-    border-radius: 0.75em;
+    border-radius: 1.75em;
+    background: #4b6cb7;
+    box-shadow: 20px 20px 60px #405c9c, -20px -20px 60px #567cd2;
     width: 12%;
     padding: 10px 0px;
     height: 50%;
@@ -140,7 +142,8 @@ header h1 {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    background: #4b6cb7;
+    box-shadow: 20px 20px 60px #405c9c, -20px -20px 60px #567cd2;
     border-radius: 0.75em;
     width: 135px;
     padding: 10px;
@@ -177,8 +180,7 @@ header h1 {
 }
 
 .size-input {
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
-    border-radius: 0.75em;
+    background: #4b6cb7;
     padding: 5px;
     display: flex;
     flex-flow: row nowrap;
@@ -191,9 +193,10 @@ header h1 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    border: 1px white solid;
-    border-radius: 0.5em;
-    padding: 5px;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 12px 12px 25px #405c9c, -12px -12px 25px #567cd2;
+    padding: 10px 15px;
     margin: 0px 5px;
 }
 
@@ -207,7 +210,7 @@ header h1 {
     border: 2px white solid;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +229,7 @@ header h1 {
     border: 2px white solid;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +248,7 @@ header h1 {
     border: 2px white solid;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +267,7 @@ header h1 {
     border: 2px white solid;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +286,7 @@ header h1 {
     border: 2px white solid;
     border-radius: 50%;
     margin: 0px 5px;
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,42 +319,24 @@ header h1 {
     align-items: center;
 }
 
-.size-tool button {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 5px 15px 5px 10px;
-    margin: 5px;
-    border: 2.5px solid rgba(76, 121, 60, 1);
-    border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    font-weight: 780;
-    font-size: 20px;
-}
-
-.size-tool button img {
-    width: fit-content;
-    height: 35px;
-}
-
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     input[type='range'] {
         overflow: hidden;
         -webkit-appearance: none;
-        background-color: rgba(131, 131, 131, 0.4000000059604645);
+        background-color: #4b6cb7
     }
     input[type='range']::-webkit-slider-runnable-track {
         height: 10px;
         -webkit-appearance: none;
-        color: #13bba4;
+        color: #4b6cb7;
         margin-top: -1px;
     }
     input[type='range']::-webkit-slider-thumb {
         width: 10px;
         -webkit-appearance: none;
         height: 10px;
-        background: rgba(176, 218, 185, 1);
-        box-shadow: -80px 0 0 80px rgba(176, 218, 185, 1);
+        background: white;
+        box-shadow: -80px 0 0 80px white;
     }
 }
 
@@ -359,11 +344,11 @@ header h1 {
 /** FF*/
 
 input[type="range"]::-moz-range-progress {
-    background-color: rgba(176, 218, 185, 1);
+    background-color: #4b6cb7;
 }
 
 input[type="range"]::-moz-range-track {
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    background-color: #4b6cb7;
 }
 
 
@@ -398,14 +383,15 @@ input[type="range"]::-ms-fill-upper {
 }
 
 #done {
+    color: white;
     display: flex;
     align-items: center;
-    background-color: white;
-    padding: 5px 15px 5px 10px;
+    padding: 10px 15px 10px 10px;
     margin: 5px;
-    border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border: transparent 1px solid;
+    border: 0px;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 15px 15px 29px #405c9c, -15px -15px 29px #567cd2;
     font-weight: 780;
     font-size: 20px;
 }
@@ -413,6 +399,7 @@ input[type="range"]::-ms-fill-upper {
 #done img {
     width: fit-content;
     height: 35px;
+    filter: invert(1);
 }
 
 .done-wrapper {
@@ -669,7 +656,8 @@ input[type="range"]::-ms-fill-upper {
 
 /* lobby */
 
-.lobby {
+.lobby,
+.login {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -683,7 +671,8 @@ input[type="range"]::-ms-fill-upper {
     margin-top: auto;
 }
 
-.gamemode-selection {
+.gamemode-selection,
+.login-selection {
     justify-content: space-between;
     position: relative;
 }
@@ -884,4 +873,176 @@ input[type="range"]::-ms-fill-upper {
 
 .buttons button:hover {
     border: #000000 solid 3px;
+}
+
+
+/* login */
+
+
+/*For the Logo: */
+
+.login {
+    width: 80%;
+}
+
+.login-wrapper {
+    padding: 30px;
+    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 0em 0em 0.5em 0.5em;
+}
+
+
+/*The Login picture and the name input code: */
+
+.profile {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*The profile picture code: */
+
+.login-profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+.profile-pic img {
+    width: 100px;
+}
+
+
+/*The input name code: */
+
+.login-profile-name {
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.login-profile-name h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+}
+
+.login-profile-name input {
+    padding: 10px;
+    text-align: center;
+    border: 0px;
+    border-radius: 0.5em;
+    font-size: 17px;
+    margin: 10px auto;
+}
+
+.login-profile-name a {
+    text-align: center;
+    font-size: 17px;
+    margin: auto;
+}
+
+::placeholder {
+    /* For the placeholder color */
+    color: grey;
+}
+
+.login-button {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    height: 15%;
+    margin: auto;
+}
+
+.login-button img {
+    width: fit-content;
+    height: 35px;
+    padding-right: 10px;
+}
+
+.login-button button {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: 3px solid transparent;
+    border-radius: 0.8em;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 780;
+    font-size: 20px;
+}
+
+.login-button button:hover {
+    border: #000000 solid 3px;
+}
+
+
+/*How to play code: */
+
+.how-to-play {
+    border: 2px solid rgba(76, 121, 60, 1);
+    border-radius: 1em;
+    padding: 15px;
+    text-align: center;
+}
+
+.how-to-play h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* i ald set every element's margin to zero */
+}
+
+
+/*To arrange the < ANIMATION? > */
+
+.how-to-play {
+    padding: 20px;
+}
+
+.how-to-play .htp-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-to-play h1 {
+    font-size: 25px;
+}
+
+.htp-section h1 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+/*The ANIMATION? Block code: */
+
+.htp-section .section {
+    padding: 45px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid rgba(76, 121, 60, 1);
+    border-radius: 0.5em;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+
+/*For the "1,calling is better"*/
+
+.htp-section-2 h2,
+.htp-section-2 p {
+    margin: 0px;
+    font-size: 18px;
 }
