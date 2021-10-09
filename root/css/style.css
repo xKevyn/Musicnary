@@ -7,6 +7,11 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    color: white;
+}
+
+input {
+    color: black;
 }
 
 html {
@@ -391,9 +396,14 @@ input[type="range"]::-ms-fill-upper {
     border: 0px;
     border-radius: 50px;
     background: #4b6cb7;
-    box-shadow: 15px 15px 29px #405c9c, -15px -15px 29px #567cd2;
+    box-shadow: 3px 3px 7px #405c9c, -3px -3px 7px #567cd2;
     font-weight: 780;
     font-size: 20px;
+}
+
+#done:hover {
+    background: linear-gradient(145deg, #4461a5, #5074c4);
+    box-shadow: 3px 3px 7px #405c9c, -3px -3px 7px #567cd2;
 }
 
 #done img {
@@ -459,9 +469,9 @@ input[type="range"]::-ms-fill-upper {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
-    border: 3px solid rgba(76, 121, 60, 1);
     border-radius: 0.5em;
+    background: #4b6cb7;
+    box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
     width: 18%;
     padding: 10px 0px;
     height: 500px;
@@ -510,9 +520,9 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .album-replay {
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
-    border: 3px solid rgba(76, 121, 60, 1);
-    border-radius: 0.5em;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
     width: 70%;
     height: 520px;
 }
@@ -623,16 +633,17 @@ input[type="range"]::-ms-fill-upper {
     display: flex;
     align-items: center;
     margin: 15px;
-    background-color: #ffffff;
-    border: 1px solid transparent;
-    border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 7px 7px 13px #405c9c, -7px -7px 13px #567cd2;
     font-weight: 780;
     font-size: 20px;
 }
 
 .replay-control button:hover {
-    border: 3px solid #000000;
+    background: linear-gradient(145deg, #4461a5, #5074c4);
+    box-shadow: 5px 5px 10px #405c9c, -5px -5px 10px #567cd2;
 }
 
 .back-button,
@@ -651,6 +662,7 @@ input[type="range"]::-ms-fill-upper {
 .replay-control img {
     width: fit-content;
     height: 35px;
+    filter: invert(1);
 }
 
 
@@ -682,14 +694,18 @@ input[type="range"]::-ms-fill-upper {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 30px;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 0em 0em 0.5em 0.5em;
+    background: #4b6cb7;
+    box-shadow: 7px 7px 13px #405c9c, -7px -7px 13px #567cd2;
     border-radius: 0em 0em 0.5em 0.5em;
 }
 
 .settings {
     align-items: center;
     justify-content: center;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 7px 7px 13px #405c9c, -7px -7px 13px #567cd2;
     border-radius: 0em 0em 0.5em 0.5em;
     width: 18%;
     height: 100%;
@@ -715,19 +731,18 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .desc h2 {
-    color: black;
     font-size: 32pt;
     margin: 0;
 }
 
 .desc p {
-    color: black;
     font-size: 16pt;
     margin: 0;
 }
 
 .icon {
     margin: 5px;
+    filter: invert(1);
 }
 
 .icon img {
@@ -754,15 +769,16 @@ input[type="range"]::-ms-fill-upper {
 
 .invis {
     opacity: 0;
-    z-index: -100000;
+    z-index: -100;
 }
 
 .dropdown {
     text-align: center;
     margin: 20px 0;
     font-size: 16px;
-    border: black 3px solid;
-    border-radius: 2em;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 7px 7px 13px #405c9c, -7px -7px 13px #567cd2;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
@@ -780,11 +796,13 @@ input[type="range"]::-ms-fill-upper {
     padding-left: 30px;
     padding-right: 20px;
     margin: auto;
+    filter: invert(1);
 }
 
 .setting-buttons {
     height: 50px;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    background: #4b6cb7;
+    box-shadow: inset 10px 10px 19px #405c9c, inset -10px -10px 19px #567cd2;
     border-radius: 0.5em 0.5em 0em 0em;
     border: none;
     position: absolute;
@@ -792,11 +810,11 @@ input[type="range"]::-ms-fill-upper {
     font-weight: 600;
     width: 50%;
     top: -50px;
+    z-index: 10;
 }
 
 .unselected-button {
-    width: 49.5%;
-    top: -54px;
+    box-shadow: 10px 10px 19px #405c9c, -10px -10px 19px #567cd2;
 }
 
 .left-button {
@@ -815,20 +833,22 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .gamemodes div {
-    background-color: white;
-    padding: 30px;
+    background-color: #4b6cb7;
+    padding: 40px;
     margin: 5%;
     border-radius: 10em;
-    border: #ffffff solid 3px;
+    background: #4b6cb7;
+    box-shadow: 15px 15px 31px #405c9c, -15px -15px 31px #567cd2;
 }
 
 .gamemodes div:hover {
-    border: #000000 solid 3px;
+    background: linear-gradient(145deg, #4461a5, #5074c4);
+    box-shadow: 15px 15px 31px #405c9c, -15px -15px 31px #567cd2;
 }
 
 .gamemodes img {
     width: 150px;
-    background-color: white;
+    filter: invert(1);
 }
 
 .gamemode-names {
@@ -856,6 +876,7 @@ input[type="range"]::-ms-fill-upper {
     width: fit-content;
     height: 35px;
     padding-right: 10px;
+    filter: invert(1);
 }
 
 .buttons button {
@@ -863,16 +884,17 @@ input[type="range"]::-ms-fill-upper {
     align-items: center;
     margin: 15px;
     padding: 5px 20px;
-    background-color: #ffffff;
-    border: 3px solid transparent;
-    border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 5px 5px 10px #405c9c, -5px -5px 10px #567cd2;
     font-weight: 780;
     font-size: 20px;
 }
 
 .buttons button:hover {
-    border: #000000 solid 3px;
+    background: linear-gradient(145deg, #4461a5, #5074c4);
+    box-shadow: 5px 5px 10px #405c9c, -5px -5px 10px #567cd2;
 }
 
 
@@ -881,20 +903,25 @@ input[type="range"]::-ms-fill-upper {
 
 /*For the Logo: */
 
+.logo {
+    margin: 20px;
+}
+
 .login {
     width: 80%;
 }
 
 .login-wrapper {
     padding: 30px;
-    background-color: rgba(131, 131, 131, 0.4000000059604645);
+    background: #4b6cb7;
+    box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
     border-radius: 0em 0em 0.5em 0.5em;
 }
 
 
 /*The Login picture and the name input code: */
 
-.profile {
+.avatar-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -904,19 +931,20 @@ input[type="range"]::-ms-fill-upper {
 
 /*The profile picture code: */
 
-.login-profile-pic {
+.avatar-selection {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    border-radius: 50%;
     width: fit-content;
     padding: 20px;
-    margin-left: 25px;
 }
 
-.profile-pic img {
-    width: 100px;
+.avatar-selection img {
+    width: 150px;
+}
+
+.avatar-selection h1 {
+    margin: 10px;
 }
 
 
@@ -956,8 +984,6 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .login-button {
-    display: flex;
-    flex-flow: row nowrap;
     width: 50%;
     height: 15%;
     margin: auto;
@@ -967,31 +993,34 @@ input[type="range"]::-ms-fill-upper {
     width: fit-content;
     height: 35px;
     padding-right: 10px;
+    filter: invert(1);
 }
 
 .login-button button {
     display: flex;
     align-items: center;
     margin: 10px auto;
+    border: 0px;
     padding: 5px 20px;
-    background-color: #ffffff;
-    border: 3px solid transparent;
-    border-radius: 0.8em;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 5px 5px 10px #405c9c, -5px -5px 10px #567cd2;
     font-weight: 780;
     font-size: 20px;
 }
 
 .login-button button:hover {
-    border: #000000 solid 3px;
+    background: linear-gradient(145deg, #4461a5, #5074c4);
+    box-shadow: 5px 5px 10px #405c9c, -5px -5px 10px #567cd2;
 }
 
 
 /*How to play code: */
 
 .how-to-play {
-    border: 2px solid rgba(76, 121, 60, 1);
-    border-radius: 1em;
+    border-radius: 50px;
+    background: #4b6cb7;
+    box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
     padding: 15px;
     text-align: center;
 }
