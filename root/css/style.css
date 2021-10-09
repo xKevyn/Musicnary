@@ -12,6 +12,7 @@
 
 input {
     color: black;
+    border: 0px;
 }
 
 html {
@@ -426,6 +427,8 @@ input[type="range"]::-ms-fill-upper {
     padding: 2%;
     width: 500px;
     height: 20px;
+    text-align: center;
+    font-size: 17px;
 }
 
 .text-field p {
@@ -904,10 +907,6 @@ input[type="range"]::-ms-fill-upper {
 
 /*For the Logo: */
 
-.logo {
-    margin: 20px;
-}
-
 .login {
     width: 80%;
 }
@@ -917,6 +916,18 @@ input[type="range"]::-ms-fill-upper {
     background: #4b6cb7;
     box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
     border-radius: 0em 0em 0.5em 0.5em;
+    position: relative;
+}
+
+.login-wrapper2 {
+    width: 90%;
+    padding: 30px;
+    background: #4b6cb7;
+    box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
+    border-radius: 0em 0em 0.5em 0.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -1037,20 +1048,22 @@ input[type="range"]::-ms-fill-upper {
 
 .how-to-play {
     padding: 20px;
+    width: 350px;
+    height: 300px;
 }
 
-.how-to-play .htp-section {
+.how-to-play .help-title {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.how-to-play h1 {
+.help-button h1 {
     font-size: 25px;
 }
 
-.htp-section h1 {
+.help-title h1 {
     font-size: 35px;
     font-weight: bolder;
 }
@@ -1058,21 +1071,25 @@ input[type="range"]::-ms-fill-upper {
 
 /*The ANIMATION? Block code: */
 
-.htp-section .section {
+.section {
     padding: 45px;
     margin: 10px;
-    background-color: white;
-    border: 1px solid rgba(76, 121, 60, 1);
+    width: 150px;
+    background-color: #4b6cb7;
     border-radius: 0.5em;
     font-weight: bolder;
     font-size: 23px;
 }
 
+.section img {
+    height: 100px;
+}
+
 
 /*For the "1,calling is better"*/
 
-.htp-section-2 h2,
-.htp-section-2 p {
+.help-desc h2,
+.help-desc p {
     margin: 0px;
     font-size: 18px;
 }
