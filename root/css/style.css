@@ -450,6 +450,7 @@ input[type="range"]::-ms-fill-upper {
     zoom: 0.6;
     background-color: white;
     margin-top: 50px;
+    border-radius: 2em;
 }
 
 
