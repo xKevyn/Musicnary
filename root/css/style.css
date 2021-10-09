@@ -118,7 +118,7 @@ main {
     justify-content: center;
     border-radius: 1.75em;
     background: #4b6cb7;
-    box-shadow: 20px 20px 60px #405c9c, -20px -20px 60px #567cd2;
+    box-shadow: 22px 22px 44px #405c9c, -22px -22px 44px #567cd2;
     width: 12%;
     padding: 10px 0px;
     height: 50%;
@@ -148,7 +148,7 @@ main {
     align-items: center;
     justify-content: center;
     background: #4b6cb7;
-    box-shadow: 20px 20px 60px #405c9c, -20px -20px 60px #567cd2;
+    box-shadow: 22px 22px 44px #405c9c, -22px -22px 44px #567cd2;
     border-radius: 0.75em;
     width: 135px;
     padding: 10px;
