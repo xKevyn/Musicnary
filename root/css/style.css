@@ -418,6 +418,9 @@ input[type="range"]::-ms-fill-upper {
     padding-left: 20px;
 }
 
+
+/* guess */
+
 .text-field {
     display: flex;
     flex-flow: row nowrap;
@@ -439,11 +442,42 @@ input[type="range"]::-ms-fill-upper {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    padding-left: 181px;
+    padding-left: 7%;
+    position: relative;
 }
 
+#songList {
+    list-style-type: none;
+    padding: 0px;
+    background-color: white;
+    margin: 0;
+    overflow-y: scroll;
+    position: absolute;
+    top: 57px;
+    left: 48px;
+    border-radius: 1.5em;
+}
 
-/* guess */
+#songList li {
+    border: 1px solid #ddd;
+    width: 450px;
+    max-height: 207.8px;
+    margin-top: -1px;
+    /* Prevent double borders */
+    padding: 10px 22.5px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    display: block
+}
+
+#songList li:hover:not(.header) {
+    background-color: #ccc;
+}
+
+#songList::-webkit-scrollbar {
+    display: none;
+}
 
 .title h1 {
     margin: 20px 0 10px 0;
@@ -836,7 +870,7 @@ input[type="range"]::-ms-fill-upper {
     margin: auto;
 }
 
-.gamemodes div {
+.gamemode {
     background-color: #4b6cb7;
     padding: 40px;
     margin: 5%;
@@ -845,9 +879,13 @@ input[type="range"]::-ms-fill-upper {
     box-shadow: 15px 15px 31px #405c9c, -15px -15px 31px #567cd2;
 }
 
-.gamemodes div:hover {
+.gamemode:hover {
     background: linear-gradient(145deg, #4461a5, #5074c4);
     box-shadow: 15px 15px 31px #405c9c, -15px -15px 31px #567cd2;
+}
+
+.selected-gamemode {
+    box-shadow: inset 15px 15px 31px #405c9c, inset -15px -15px 31px #567cd2
 }
 
 .gamemodes img {

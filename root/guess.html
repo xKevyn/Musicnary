@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script type="text/javascript" src="./js/guess.js"></script>
+    <script type="text/javascript" src="./js/searchmusic.js"></script>
 </head>
 
 <body>
+    <audio id="Without Me"><source src="./music/Without Me.mp3" type="audio/mpeg"></audio>
+    <audio id="Heartbreak Anniversary"><source src="./music/Giveon - Heartbreak Anniversary (Audio).mp3" type="audio/mpeg"></audio>
+    <audio id="Double Take"><source src="./music/dhruv - double take (Official Audio).mp3" type="audio/mpeg"></audio>
+
     <main>
         <div class="drawing">
             <img id="guessDrawing" src="images/guessDrawing.png">
@@ -19,10 +23,19 @@
             <h1>Guess a song </h1>
         </div>
         <div class="input">
-            <input class="text-field" placeholder="Guess a music based on the clues in the drawing">
-            <div class="done-wrapper">
-                <a id="save" href="albumreplay.html"><button id="done"><img src="images/done.png">DONE!</button></a>
+            <div class="input">
+                <input type="text" id="inputBox" class="text-field" onkeyup="searchMusic()" placeholder="Guess a music based on the clues in the drawing">
+                <div class="done-wrapper">
+                    <a id="save" href="albumreplay.html"><button id="done" onclick="stopSong()"><img src="images/done.png">DONE!</button></a>
+                </div>
+
+                <ul id="songList">
+                    <li onclick="playSongPreview('Double Take'), changeInputBox(innerText)">dhruv - Double Take</li>
+                    <li onclick="playSongPreview('Heartbreak Anniversary'), changeInputBox(innerText)">Giveon - Heartbreak Anniversary</li>
+                    <li onclick="playSongPreview('Without Me'), changeInputBox(innerText)">Halsey - Without Me</li>
+                </ul>
             </div>
+
         </div>
 
     </main>
