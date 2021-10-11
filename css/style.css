@@ -456,6 +456,7 @@ input[type="range"]::-ms-fill-upper {
     top: 57px;
     left: 48px;
     border-radius: 1.5em;
+    opacity: 0;
 }
 
 #songList li {
@@ -468,7 +469,7 @@ input[type="range"]::-ms-fill-upper {
     text-decoration: none;
     font-size: 17px;
     color: black;
-    display: block
+    display: none;
 }
 
 #songList li:hover:not(.header) {

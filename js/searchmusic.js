@@ -10,14 +10,16 @@ function searchMusic() {
     for (i = 0; i < li.length; i++) {
         a = li[i];
         txtValue = a.textContent || a.innerText
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = ""
+        //If user enter keywords, the suggested songs will pop up
+        if (txtValue.toUpperCase().indexOf(filter) > 0) {
+            li[i].style.display = "block"
+            ul.style.opacity = 1
+            //If not, it will be null
         } else {
             li[i].style.display = "none"
         }
     }
 }
-
 
 function playSongPreview(songId) {
 
