@@ -10,12 +10,8 @@ function searchMusic() {
     for (i = 0; i < li.length; i++) {
         a = li[i];
         txtValue = a.textContent || a.innerText
-        console.log(txtValue)
-        console.log(filter)
-        console.log(txtValue.toUpperCase().indexOf(filter))
-        console.log(txtValue.toUpperCase().startsWith(filter))
-            //If user enter keywords, the suggested songs will pop up
 
+        //If user enter keywords, the suggested songs will pop up
         if (filter.length == 0) {
             li[i].style.display = "none"
         } else if (txtValue.toUpperCase().indexOf(filter) > 0 || txtValue.toUpperCase().startsWith(filter)) {
