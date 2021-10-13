@@ -457,12 +457,12 @@ input[type="range"]::-ms-fill-upper {
     left: 48px;
     border-radius: 1.5em;
     opacity: 0;
+    max-height: 190px;
 }
 
 #songList li {
     border: 1px solid #ddd;
     width: 450px;
-    max-height: 207.8px;
     margin-top: -1px;
     /* Prevent double borders */
     padding: 10px 22.5px;
