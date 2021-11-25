@@ -91,4 +91,15 @@ window.onload = () => {
             default:
         }
     }
+
+    var input = document.getElementById("nameInput");
+    input.addEventListener("keypress", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("startBtn").click();
+        }
+    });
+
 }
+
+

@@ -19,8 +19,8 @@
         <div class="login">
             <div class="box-wrapper">
                 <div class="login-selection">
-                    <button class="setting-buttons left-button">ANONYMOUS</button>
-                    <button class="setting-buttons right-button unselected-button">AUTHENTICATED</button>
+                    <button class="setting-buttons left-button" accesskey="1">ANONYMOUS</button>
+                    <button class="setting-buttons right-button unselected-button" accesskey="2">AUTHENTICATED</button>
                     <div class="login-wrapper">
                         <div class="avatar-wrapper">
                             <div class="avatar-selection">
@@ -32,11 +32,11 @@
 
                             <div class="login-profile-name">
                                 <h1>Chose a character and nickname</h1>
-                                <input placeholder="Please enter your nickname">
+                                <input placeholder="Please enter your nickname" id="nameInput">
                             </div>
                         </div>
                         <div class="login-button">
-                            <a href="lobby.html"><button class="start-button"><img src="images/play.png">START</button></a>
+                            <a href="lobby.html"><button class="start-button" id="startBtn" accesskey="s"><img src="images/play.png">START</button></a>
                         </div>
                     </div>
                     <div class="login-wrapper2 invis">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="login-button">
-                            <a href="lobby.html"><button class="start-button"><img src="images/play.png">LOGIN</button></a>
+                            <a href="lobby.html"><button class="start-button" accesskey="s"><img src="images/play.png">LOGIN</button></a>
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,7 @@
                 <h1>HOW TO PLAY</h1>
                 <div class="help-title">
                     <div class="help-button">
-                        <h1>
-                            < </h1>
+                        <h1> < </h1>
                     </div>
                     <div class="section"><img src="images/help1.png"></div>
                     <div class="help-button">
