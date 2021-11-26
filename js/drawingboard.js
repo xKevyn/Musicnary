@@ -158,3 +158,9 @@ function get_slider_size() {
     const ctx = canvas.getContext("2d")
     ctx.lineWidth = sizeSelected = document.getElementById("slider").value
 }
+
+var countdown = 100
+
+setTimeout(function() {
+    window.location.href = 'timeout_drawingboard.html';
+}, (countdown * 1000));

@@ -8,6 +8,7 @@
     <title>Musicnary</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script type="text/javascript" src="./js/searchmusic.js"></script>
+    <script type="text/javascript" src="./js/prompt.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,18 @@
     <audio id="Thank U Next"><source src="./music/Thank U_ Next - Ariana Grande [128kbps_MP3].mp3" type="audio/mpeg"></audio>
     <audio id="Venom"><source src="./music/Venom - Eminem [128kbps_MP3].mp3" type="audio/mpeg"></audio>
     <main>
+
         <div class="music-icon">
             <img src="images/music.png">
         </div>
         <div class="title">
             <h1>Choose a song </h1>
+        </div>
+        <div id="countdown">
+            <div id="countdown-number"></div>
+            <svg>
+              <circle class="thirtysec" r="18" cx="20" cy="20"></circle>
+            </svg>
         </div>
         <div class="input">
             <div class="input">
