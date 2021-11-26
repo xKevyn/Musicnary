@@ -67,12 +67,12 @@ main {
     align-items: center;
     /*     border: 3px solid rgba(76, 121, 60, 1);
     border-radius: 1em; */
-    margin: 10px;
     padding: 15px;
 }
 
 .clues {
     display: flex;
+    margin-bottom: 10px;
     flex-flow: row nowrap;
     justify-content: center;
     border-radius: 50px;
@@ -835,7 +835,6 @@ input[type="range"]::-ms-fill-upper {
     border-radius: 0em 0em 0.5em 0.5em;
     background: #4b6cb7;
     box-shadow: 7px 7px 13px #405c9c, -7px -7px 13px #567cd2;
-    border-radius: 0em 0em 0.5em 0.5em;
 }
 
 .settings {
@@ -940,7 +939,7 @@ input[type="range"]::-ms-fill-upper {
 .setting-buttons {
     height: 50px;
     background: #4b6cb7;
-    box-shadow: inset 10px 10px 19px #405c9c, inset -10px -10px 19px #567cd2;
+    box-shadow: -10px -10px 19px #567cd2;
     border-radius: 0.5em 0.5em 0em 0em;
     border: none;
     position: absolute;
@@ -952,7 +951,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .unselected-button {
-    box-shadow: 10px 10px 19px #405c9c, -10px -10px 19px #567cd2;
+    box-shadow: inset 10px 10px 19px #405c9c;
 }
 
 .left-button {
@@ -1230,4 +1229,58 @@ input[type="range"]::-ms-fill-upper {
 .help-desc p {
     margin: 0px;
     font-size: 18px;
+}
+
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition-delay: 2s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
 }
