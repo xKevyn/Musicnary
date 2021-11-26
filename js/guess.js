@@ -1,5 +1,14 @@
-var countdown = 30
+function save_guess1() {
+    const inputBox = document.querySelector("#inputBox")
+    sessionStorage.setItem("guess1", inputBox.value);
+}
 
-setTimeout(function() {
-    window.location.href = 'timeout_guess.html';
-}, (countdown * 1000));
+function save_guess2() {
+    const inputBox = document.querySelector("#inputBox")
+    sessionStorage.setItem("guess2", inputBox.value);
+}
+
+function save_guess3() {
+    const inputBox = document.querySelector("#inputBox")
+    sessionStorage.setItem("guess3", inputBox.value);
+}

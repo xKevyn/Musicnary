@@ -1,5 +1,4 @@
-var countdown = 30
-
-setTimeout(function() {
-    window.location.href = 'timeout_prompt.html';
-}, (countdown * 1000));
+function save_prompt() {
+    const inputBox = document.querySelector("#inputBox")
+    sessionStorage.setItem("prompt", inputBox.value)
+}

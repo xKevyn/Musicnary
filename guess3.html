@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Musicnary</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
-
 </head>
 
 <body>
@@ -22,18 +20,17 @@
     <audio id="Thank U Next"><source src="./music/Thank U_ Next - Ariana Grande [128kbps_MP3].mp3" type="audio/mpeg"></audio>
     <audio id="Venom"><source src="./music/Venom - Eminem [128kbps_MP3].mp3" type="audio/mpeg"></audio>
     <main>
-
-        <div class="music-icon">
-            <img src="images/music.png">
+        <div class="drawing">
+            <img class="guessDrawing" src="images/guessDrawing.png">
         </div>
         <div class="title">
-            <h1>Choose a song </h1>
+            <h1>Guess a song </h1>
         </div>
         <div class="input">
             <div class="input">
                 <input type="text" id="inputBox" class="text-field" onkeyup="searchMusic()" placeholder="Guess a music based on the clues in the drawing">
                 <div class="done-wrapper">
-                    <a id="save" href="transition2drawingboard1.html"><button id="done" onclick="stopSong();save_prompt()" accesskey="s"><img src="images/done.png">DONE!</button></a>
+                    <a id="save" href="replay1.html" accesskey="s"><button id="done" onclick="stopSong();save_guess3()"><img src="images/done.png">DONE!</button></a>
                 </div>
 
                 <ul id="songList">
@@ -50,9 +47,11 @@
             </div>
 
         </div>
+
     </main>
+
 </body>
 <script type="text/javascript" src="./js/searchmusic.js"></script>
-<script type="text/javascript" src="./js/prompt.js"></script>
+<script type="text/javascript" src="./js/guess.js"></script>
 
 </html>

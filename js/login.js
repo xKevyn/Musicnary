@@ -1,20 +1,5 @@
 window.onload = () => {
 
-    const settingButtons = document.querySelectorAll("div.login-selection > button")
-    console.log(settingButtons)
-
-    settingButtons[0].addEventListener("click", () => {
-        swap_class(settingButtons[0], settingButtons[1])
-        document.querySelector("div.login-wrapper2").classList.add("invis")
-        document.querySelector("div.login-wrapper").classList.remove("invis")
-    })
-
-    settingButtons[1].addEventListener("click", () => {
-        swap_class(settingButtons[1], settingButtons[0])
-        document.querySelector("div.login-wrapper2").classList.remove("invis")
-        document.querySelector("div.login-wrapper").classList.add("invis")
-    })
-
     function swap_class(element1, element2) {
         element1.classList.remove("unselected-button")
         element2.classList.add("unselected-button")
@@ -102,4 +87,7 @@ window.onload = () => {
 
 }
 
-
+function nickname() {
+    const inputBox = document.getElementById("nameInput")
+    sessionStorage.setItem("name", inputBox.value);
+}

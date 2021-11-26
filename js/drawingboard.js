@@ -159,8 +159,24 @@ function get_slider_size() {
     ctx.lineWidth = sizeSelected = document.getElementById("slider").value
 }
 
-var countdown = 100
+var countdown = 120
 
-setTimeout(function() {
-    window.location.href = 'timeout_drawingboard.html';
-}, (countdown * 1000));
+if (sessionStorage.getItem("gamemode") == "speedrun") {
+    countdown = 60
+    document.querySelector("circle").classList.add("speedrun")
+}
+
+function save_image1() {
+    const canvas = document.querySelector("#canvas")
+    sessionStorage.setItem("image1", canvas.toDataURL());
+}
+
+function save_image2() {
+    const canvas = document.querySelector("#canvas")
+    sessionStorage.setItem("image2", canvas.toDataURL());
+}
+
+function save_image3() {
+    const canvas = document.querySelector("#canvas")
+    sessionStorage.setItem("image3", canvas.toDataURL());
+}

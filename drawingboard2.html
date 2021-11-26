@@ -19,7 +19,7 @@
         <div id="countdown">
             <div id="countdown-number"></div>
             <svg>
-              <circle r="18" cx="20" cy="20"></circle>
+              <circle id="circle" r="18" cx="20" cy="20"></circle>
             </svg>
         </div>
         <div class="board">
@@ -91,10 +91,15 @@
                     </div>
                 </div>
             </div>
-            <a id="save" href="transition2guess.html" accesskey="s"><button id="done"><img src="images/done.png">DONE!</button></a>
+            <a id="save" href="transition2guess2.html" accesskey="s" onclick="save_image2()"><button id="done"><img src="images/done.png">DONE!</button></a>
         </div>
     </main>
 
 </body>
+<script>
+    setTimeout(function() {
+        window.location.href = 'timeout2.html';
+    }, (countdown * 1000));
+</script>
 
 </html>

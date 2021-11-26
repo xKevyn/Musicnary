@@ -583,7 +583,7 @@ input[type="range"]::-ms-fill-upper {
     margin: 20px 0 10px 0;
 }
 
-#guessDrawing {
+.guessDrawing {
     zoom: 0.6;
     background-color: white;
     margin-top: 50px;
@@ -630,6 +630,10 @@ input[type="range"]::-ms-fill-upper {
 
 .player-list div:hover {
     border: 3px solid black;
+}
+
+.none {
+    opacity: 50%;
 }
 
 .player-list img {
@@ -1049,10 +1053,10 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .login-wrapper {
-    padding: 30px;
+    padding: 50px;
     background: #4b6cb7;
     box-shadow: 35px 35px 70px #405c9c, -35px -35px 70px #567cd2;
-    border-radius: 0em 0em 0.5em 0.5em;
+    border-radius: 0.5em;
     position: relative;
 }
 
@@ -1320,15 +1324,11 @@ svg circle {
     stroke-width: 4px;
     stroke: white;
     fill: none;
-    animation: countdown 100s linear infinite forwards;
+    animation: countdown 120s linear infinite forwards;
 }
 
-.sixtysec {
+.speedrun {
     animation: countdown 60s linear infinite forwards;
-}
-
-.thirtysec {
-    animation: countdown 30s linear infinite forwards;
 }
 
 @keyframes countdown {

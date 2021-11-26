@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Musicnary</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+    <embed src="./music/dhruv - double take (Official Audio).mp3" loop="true" autostart="true" width="2" height="0">
+    <main>
+        <div class="clues scroll-left">
+            <h1>Listen to the music and draw clues about the song ... Double take </h1> <img src="images/playing.png">
+        </div>
+        <div id="countdown">
+            <svg>
+              <circle r="18" cx="20" cy="20"></circle>
+            </svg>
+        </div>
+        <div class="board">
+            <div class="color-board">
+                <div id="c1" style="background-color: black" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c2" style="background-color: #8C8C8C" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c3" style="background-color: #C4C4C4" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+
+                <div id="c4" style="background-color: white" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c5" style="background-color: #FFD700" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c6" style="background-color: #FFFF00" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+
+                <div id="c7" style="background-color: #FFA500" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c8" style="background-color: #FFC0CB" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c9" style="background-color: red" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+
+                <div id="c10" style="background-color: #D729D7" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c11" style="background-color: #FF00FF" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c12" style="background-color: blue" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+
+                <div id="c13" style="background-color: #66E5E5" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c14" style="background-color: #79E567" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c15" style="background-color: green" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+
+                <div id="c16" style="background-color: #864531" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c17" style="background-color: #BB5E4A" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c18" style="background-color: #EAA179" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="picked-color" style="background-color: black" class="picked-color"></div>
+            </div>
+
+            <canvas id="canvas" class="drawer"></canvas>
+
+            <div class="tool-board">
+                <div><img id="pen" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/pen.png"></div>
+                <div><img id="eraser" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/eraser.png"></div>
+                <div><img id="square" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/square.png"></div>
+                <div><img id="circle" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/circle.png"></div>
+                <div><img id="filled-square" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/filled-square.png"></div>
+                <div><img id="filled-circle" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/filled-circle.png"></div>
+                <div><img id="line" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/line.png"></div>
+                <div><img id="bucket" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/bucket.png"></div>
+            </div>
+        </div>
+
+        <div class="size-tool">
+            <div class="size-input">
+                <div class="size-circle">
+                    <div class="circle1" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
+                        <div class="circle1-size"></div>
+                    </div>
+                    <div class="circle2" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
+                        <div class="circle2-size"></div>
+                    </div>
+                    <div class="circle3" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
+                        <div class="circle3-size"></div>
+                    </div>
+                    <div class="circle4" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
+                        <div class="circle4-size"></div>
+                    </div>
+                    <div class="circle5" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
+                        <div class="circle5-size"></div>
+                    </div>
+                </div>
+                <div class="size-line">
+                    <div class="size-circle">
+                        <div class="circle"></div>
+                        <input id="slider" oninput="get_slider_size()" type="range" min="1" max="20" value="1" step="any">
+                        <div class="circleF"></div>
+                    </div>
+                </div>
+            </div>
+            <a id="save" href="transition2guess1.html" accesskey="s" onclick="save_image1()"><button id="done"><img src="images/done.png">DONE!</button></a>
+        </div>
+    </main>
+
+</body>
+<script type="text/javascript" src="./js/drawingboard.js"></script>
+<script>
+    setTimeout(function() {
+        window.location.href = 'timeout1.html';
+    }, (countdown * 1000));
+</script>
+
+</html>

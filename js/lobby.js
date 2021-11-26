@@ -31,6 +31,7 @@ window.onload = () => {
     function select_gamemode(id) {
         if (gamemodeSelected != document.getElementById(id)) gamemodeSelected.classList.remove("selected-gamemode")
         gamemodeSelected = document.getElementById(id)
+        sessionStorage.setItem("gamemode", id)
         gamemodeSelected.classList.add("selected-gamemode")
     }
 
@@ -41,4 +42,10 @@ window.onload = () => {
             alert('Failed to copy');
         })
     })
+}
+
+var playername = document.querySelectorAll(".player1name")
+
+for (var i = 0, len = playername.length; i < len; i++) {
+    playername[i].innerText = sessionStorage.getItem("name")
 }
