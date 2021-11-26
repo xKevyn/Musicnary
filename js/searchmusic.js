@@ -44,3 +44,4 @@ function stopSong() {
     songChoosed.currentTime = 0
     changeInputBox("")
 }
+

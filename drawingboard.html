@@ -19,62 +19,62 @@
 
         <div class="board">
             <div class="color-board">
-                <div id="c1" style="background-color: black" onclick="select_color(this.id)"></div>
-                <div id="c2" style="background-color: #8C8C8C" onclick="select_color(this.id)"></div>
-                <div id="c3" style="background-color: #C4C4C4" onclick="select_color(this.id)"></div>
+                <div id="c1" style="background-color: black" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c2" style="background-color: #8C8C8C" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c3" style="background-color: #C4C4C4" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
 
-                <div id="c4" style="background-color: white" onclick="select_color(this.id)"></div>
-                <div id="c5" style="background-color: #FFD700" onclick="select_color(this.id)"></div>
-                <div id="c6" style="background-color: #FFFF00" onclick="select_color(this.id)"></div>
+                <div id="c4" style="background-color: white" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c5" style="background-color: #FFD700" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c6" style="background-color: #FFFF00" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
 
-                <div id="c7" style="background-color: #FFA500" onclick="select_color(this.id)"></div>
-                <div id="c8" style="background-color: #FFC0CB" onclick="select_color(this.id)"></div>
-                <div id="c9" style="background-color: red" onclick="select_color(this.id)"></div>
+                <div id="c7" style="background-color: #FFA500" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c8" style="background-color: #FFC0CB" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c9" style="background-color: red" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
 
-                <div id="c10" style="background-color: #D729D7" onclick="select_color(this.id)"></div>
-                <div id="c11" style="background-color: #FF00FF" onclick="select_color(this.id)"></div>
-                <div id="c12" style="background-color: blue" onclick="select_color(this.id)"></div>
+                <div id="c10" style="background-color: #D729D7" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c11" style="background-color: #FF00FF" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c12" style="background-color: blue" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
 
-                <div id="c13" style="background-color: #66E5E5" onclick="select_color(this.id)"></div>
-                <div id="c14" style="background-color: #79E567" onclick="select_color(this.id)"></div>
-                <div id="c15" style="background-color: green" onclick="select_color(this.id)"></div>
+                <div id="c13" style="background-color: #66E5E5" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c14" style="background-color: #79E567" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c15" style="background-color: green" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
 
-                <div id="c16" style="background-color: #864531" onclick="select_color(this.id)"></div>
-                <div id="c17" style="background-color: #BB5E4A" onclick="select_color(this.id)"></div>
-                <div id="c18" style="background-color: #EAA179" onclick="select_color(this.id)"></div>
+                <div id="c16" style="background-color: #864531" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c17" style="background-color: #BB5E4A" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
+                <div id="c18" style="background-color: #EAA179" onclick="select_color(this.id)" onkeypress="select_color(this.id)" tabindex="0"></div>
                 <div id="picked-color" style="background-color: black" class="picked-color"></div>
             </div>
 
             <canvas id="canvas" class="drawer"></canvas>
 
             <div class="tool-board">
-                <div><img id="pen" onclick="select_tool(this.id)" src="images/pen.png"></div>
-                <div><img id="eraser" onclick="select_tool(this.id)" src="images/eraser.png"></div>
-                <div><img id="square" onclick="select_tool(this.id)" src="images/square.png"></div>
-                <div><img id="circle" onclick="select_tool(this.id)" src="images/circle.png"></div>
-                <div><img id="filled-square" onclick="select_tool(this.id)" src="images/filled-square.png"></div>
-                <div><img id="filled-circle" onclick="select_tool(this.id)" src="images/filled-circle.png"></div>
-                <div><img id="line" onclick="select_tool(this.id)" src="images/line.png"></div>
-                <div><img id="bucket" onclick="select_tool(this.id)" src="images/bucket.png"></div>
+                <div><img id="pen" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/pen.png"></div>
+                <div><img id="eraser" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/eraser.png"></div>
+                <div><img id="square" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/square.png"></div>
+                <div><img id="circle" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/circle.png"></div>
+                <div><img id="filled-square" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/filled-square.png"></div>
+                <div><img id="filled-circle" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/filled-circle.png"></div>
+                <div><img id="line" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/line.png"></div>
+                <div><img id="bucket" onclick="select_tool(this.id)" onkeypress="select_tool(this.id)" tabindex="0" src="images/bucket.png"></div>
             </div>
         </div>
 
         <div class="size-tool">
             <div class="size-input">
                 <div class="size-circle">
-                    <div class="circle1" onclick="select_size(this.className)">
+                    <div class="circle1" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
                         <div class="circle1-size"></div>
                     </div>
-                    <div class="circle2" onclick="select_size(this.className)">
+                    <div class="circle2" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
                         <div class="circle2-size"></div>
                     </div>
-                    <div class="circle3" onclick="select_size(this.className)">
+                    <div class="circle3" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
                         <div class="circle3-size"></div>
                     </div>
-                    <div class="circle4" onclick="select_size(this.className)">
+                    <div class="circle4" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
                         <div class="circle4-size"></div>
                     </div>
-                    <div class="circle5" onclick="select_size(this.className)">
+                    <div class="circle5" onclick="select_size(this.className)" onkeypress="select_size(this.className)" tabindex="0">
                         <div class="circle5-size"></div>
                     </div>
                 </div>
@@ -86,7 +86,11 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <a id="save" href="transition2guess.html"><button id="done"><img src="images/done.png">DONE!</button></a>
+=======
+            <a id="save" href="guess.html" accesskey="s"><button id="done"><img src="images/done.png">DONE!</button></a>
+>>>>>>> dd6fce3762e61a9d774fb433aa500987624088c5
         </div>
     </main>
 
