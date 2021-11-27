@@ -10,6 +10,11 @@
     color: white;
 }
 
+@font-face {
+    font-family: "brightly crush";
+    src: url("Brightly\ Crush\ Shine.otf") format("opentype");
+}
+
 input {
     color: black;
     border: 0px;
@@ -1052,6 +1057,21 @@ input[type="range"]::-ms-fill-upper {
 
 
 /*For the Logo: */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.logo h1 {
+    font-family: "brightly crush";
+    font-size: 100px;
+    padding-left: 50px;
+}
 
 .login {
     width: 80%;
