@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "brightly crush";
+    src: url("Brightly\ Crush\ Shine.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "shortbread cookies";
+    src: url("Shortbread_Cookies-Reg.otf") format("opentype");
+}
+
+.title {
+    font-family: "brightly crush";
+    font-size: 70px;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px auto 20px auto;
+}
+
+.small {
+    font-size: 50px;
+}
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.gif {
+    display: block;
+    margin: 10px auto 10px auto;
+}

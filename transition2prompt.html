@@ -8,15 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Musicnary</title>
     <link rel="stylesheet" type="text/css" href="./css/countdown.css">
+    <link rel="stylesheet" type="text/css" href="./css/transition.css">
 </head>
 
 <body>
     <main>
-        <h1>Please select a music and let the others draw about it</h1>
+        <h1 class="title">Please select a music <br> and let the others draw about it</h1>
+        <img class="gif" src="./images/cute.gif">
+        <div class="progress">
+            <div class="progress-value"></div>
+        </div>
         <script>
             setTimeout(function() {
                 window.location.href = 'prompt.html';
-            }, 2500);
+            }, 3000);
         </script>
     </main>
 

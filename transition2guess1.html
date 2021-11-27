@@ -8,17 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Musicnary</title>
     <link rel="stylesheet" type="text/css" href="./css/countdown.css">
+    <link rel="stylesheet" type="text/css" href="./css/transition.css">
 </head>
 
 <body>
     <main>
-        <h1>Every player are done with their drawings</h1>
-        <h1>Now it's your turn to guess the drawings</h1>
-        <h1>What music is hidden behind the drawings? Let's find out</h1>
+        <h1 class="title small">Every player are done with their drawings<br>Now it's your turn to guess the drawings</h1>
+        <img class="gif" src="./images/cute.gif">
+        <div class="progress">
+            <div class="progress-value"></div>
+        </div>
         <script>
             setTimeout(function() {
                 window.location.href = 'guess1.html';
-            }, 2500);
+            }, 5000);
         </script>
     </main>
 

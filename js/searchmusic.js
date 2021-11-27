@@ -43,3 +43,12 @@ function stopSong() {
     songChoosed.pause()
     songChoosed.currentTime = 0
 }
+
+const audios = document.querySelectorAll('audio');
+
+function get_volume() {
+
+    audios.forEach(audio => {
+        audio.volume = document.getElementById("volume-slider").value
+    });
+}

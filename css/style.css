@@ -99,7 +99,7 @@ main {
     background-color: white;
     border-radius: 2em;
     width: 65%;
-    height: 480px;
+    height: 450px;
 }
 
 .board {
@@ -1019,6 +1019,7 @@ input[type="range"]::-ms-fill-upper {
     width: 50%;
     height: 15%;
     margin: auto;
+    padding-top: 50px;
 }
 
 .buttons img {
@@ -1341,4 +1342,23 @@ svg circle {
     to {
         stroke-dashoffset: 113px;
     }
+}
+
+
+/* Volume slider*/
+
+.vertical {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    transform: rotate(270deg);
+}
+
+.volume img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 105px;
+    filter: invert(1);
 }

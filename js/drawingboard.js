@@ -180,3 +180,12 @@ function save_image3() {
     const canvas = document.querySelector("#canvas")
     sessionStorage.setItem("image3", canvas.toDataURL());
 }
+
+const audios = document.querySelectorAll('audio');
+
+function get_volume() {
+
+    audios.forEach(audio => {
+        audio.volume = document.getElementById("volume-slider").value
+    });
+}
