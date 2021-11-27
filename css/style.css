@@ -1245,7 +1245,6 @@ input[type="range"]::-ms-fill-upper {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     /* If you want dots under the hoverable text */
 }
 
@@ -1266,7 +1265,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .tooltip .tooltiptext {
-    width: 120px;
+    width: fit-content;
     top: 100%;
     left: 50%;
     margin-left: -60px;
