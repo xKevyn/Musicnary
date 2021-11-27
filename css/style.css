@@ -1265,7 +1265,7 @@ input[type="range"]::-ms-fill-upper {
 }
 
 .tooltip .tooltiptext {
-    width: fit-content;
+    width: 200px;
     top: 100%;
     left: 50%;
     margin-left: -60px;
