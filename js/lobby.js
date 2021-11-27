@@ -1,7 +1,5 @@
 window.onload = () => {
-
     const gamemodeButtons = document.querySelectorAll("div.gamemodes > div")
-    const settingButtons = document.querySelectorAll("div.gamemode-selection > button")
     let gamemodeSelected = document.getElementById("default")
 
 
@@ -10,18 +8,6 @@ window.onload = () => {
             select_gamemode(gamemodeButtons[i].id)
         })
     }
-
-    settingButtons[0].addEventListener("click", () => {
-        swap_class(settingButtons[0], settingButtons[1])
-        document.querySelector("div.settings").classList.add("invis")
-        document.querySelector("div.gamemode-wrapper").classList.remove("invis")
-    })
-
-    settingButtons[1].addEventListener("click", () => {
-        swap_class(settingButtons[1], settingButtons[0])
-        document.querySelector("div.settings").classList.remove("invis")
-        document.querySelector("div.gamemode-wrapper").classList.add("invis")
-    })
 
     function swap_class(element1, element2) {
         element1.classList.remove("unselected-button")
@@ -34,7 +20,7 @@ window.onload = () => {
         sessionStorage.setItem("gamemode", id)
         gamemodeSelected.classList.add("selected-gamemode")
     }
-
+    select_gamemode("default")
     document.querySelector("button.invite-button").addEventListener("click", () => {
         navigator.clipboard.writeText(window.location.href).then(() => {
             alert("copied successfully!")
@@ -43,6 +29,7 @@ window.onload = () => {
         })
     })
 }
+
 
 var playername = document.querySelectorAll(".player1name")
 
