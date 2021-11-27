@@ -52,3 +52,11 @@ var playername = document.querySelectorAll(".player1name")
 for (var i = 0, len = playername.length; i < len; i++) {
     playername[i].innerText = sessionStorage.getItem("name")
 }
+
+setInterval(function() {
+    document.querySelector('.replay').scrollTop += 1
+}, (100));
+
+function backtoTop() {
+    document.querySelector('.replay').scrollTop = 0
+}

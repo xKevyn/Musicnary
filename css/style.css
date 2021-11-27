@@ -913,6 +913,10 @@ input[type="range"]::-ms-fill-upper {
     z-index: -100;
 }
 
+.invis2 {
+    display: none;
+}
+
 .dropdown {
     text-align: center;
     margin: 20px 0;
